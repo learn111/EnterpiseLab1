@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="42d482a7-fcf7-41d2-b554-aaa781cac6ce" ChangeDateTime="09/12/2016 17:40:02">
+    <Property Name="ElementName" Value="[dbo].[Foodstuff].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Foodstuff]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FoodstuffId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4b74a7d5-3049-4409-a151-525e7a7f253c" ChangeDateTime="09/12/2016 17:41:30">
+    <Property Name="ElementName" Value="[dbo].[MeasurementUnit].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MeasurementUnit]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MeasurementUnitId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="74c70d34-586d-4a79-857d-820035c92295" ChangeDateTime="09/12/2016 17:42:38">
+    <Property Name="ElementName" Value="[dbo].[Dish].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Dish]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DishId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="17e59751-5ff4-48d4-a671-59ae2c9f45fe" ChangeDateTime="09/12/2016 17:44:42">
+    <Property Name="ElementName" Value="[dbo].[DishesToFoodstuffs].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DishesToFoodstuffs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="D" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4f806d7e-fd36-47f5-ab81-c5b4ce31003e" ChangeDateTime="09/12/2016 17:44:47">
+    <Property Name="ElementName" Value="[dbo].[DishesToFoodstuffs].[D]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DishesToFoodstuffs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DishesToFoodstuffsId" />
+  </Operation>
+</Operations>
