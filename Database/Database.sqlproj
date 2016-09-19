@@ -59,12 +59,39 @@
     <Folder Include="Properties" />
     <Folder Include="Programmability" />
     <Folder Include="Tables" />
+    <Folder Include="Programmability\Stored Procedures" />
+    <Folder Include="Programmability\Stored Procedures\Dishes" />
+    <Folder Include="Programmability\Stored Procedures\DishesToFoodstuffs" />
+    <Folder Include="Programmability\Stored Procedures\DishTypes" />
+    <Folder Include="Programmability\Stored Procedures\Foodstuffs" />
+    <Folder Include="Programmability\Stored Procedures\MeasurementUnits" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\Foodstuff.sql" />
-    <Build Include="Tables\MeasurementUnit.sql" />
-    <Build Include="Tables\Dish.sql" />
+    <Build Include="Tables\Foodstuffs.sql" />
+    <Build Include="Tables\MeasurementUnits.sql" />
+    <Build Include="Tables\Dishes.sql" />
     <Build Include="Tables\DishesToFoodstuffs.sql" />
+    <Build Include="Tables\DishTypes.sql" />
+    <Build Include="Programmability\Stored Procedures\Dishes\DishesSelect.sql" />
+    <Build Include="Programmability\Stored Procedures\Dishes\DishesDelete.sql" />
+    <Build Include="Programmability\Stored Procedures\Dishes\DishesInsert.sql" />
+    <Build Include="Programmability\Stored Procedures\Dishes\DishesUpdate.sql" />
+    <Build Include="Programmability\Stored Procedures\DishesToFoodstuffs\DishesToFoodstuffsSelect.sql" />
+    <Build Include="Programmability\Stored Procedures\DishesToFoodstuffs\DishesToFoodstuffsDelete.sql" />
+    <Build Include="Programmability\Stored Procedures\DishesToFoodstuffs\DishesToFoodstuffsInsert.sql" />
+    <Build Include="Programmability\Stored Procedures\DishesToFoodstuffs\DishesToFoodstuffsUpdate.sql" />
+    <Build Include="Programmability\Stored Procedures\DishTypes\DishTypesSelect.sql" />
+    <Build Include="Programmability\Stored Procedures\DishTypes\DishTypesDelete.sql" />
+    <Build Include="Programmability\Stored Procedures\DishTypes\DishTypesInsert.sql" />
+    <Build Include="Programmability\Stored Procedures\DishTypes\DishTypesUpdate.sql" />
+    <Build Include="Programmability\Stored Procedures\Foodstuffs\FoodstuffsSelect.sql" />
+    <Build Include="Programmability\Stored Procedures\Foodstuffs\FoodstuffsDelete.sql" />
+    <Build Include="Programmability\Stored Procedures\Foodstuffs\FoodstuffsInsert.sql" />
+    <Build Include="Programmability\Stored Procedures\Foodstuffs\FoodstuffsUpdate.sql" />
+    <Build Include="Programmability\Stored Procedures\MeasurementUnits\MeasurementUnitsSelect.sql" />
+    <Build Include="Programmability\Stored Procedures\MeasurementUnits\MeasurementUnitsDelete.sql" />
+    <Build Include="Programmability\Stored Procedures\MeasurementUnits\MeasurementUnitsInsert.sql" />
+    <Build Include="Programmability\Stored Procedures\MeasurementUnits\MeasurementUnitsUpdate.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Database.refactorlog" />

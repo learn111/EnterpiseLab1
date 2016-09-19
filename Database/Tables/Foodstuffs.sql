@@ -1,7 +1,7 @@
-﻿CREATE TABLE [dbo].[Foodstuff]
+﻿CREATE TABLE [dbo].[Foodstuffs]
 (
 	[FoodstuffId] INT NOT NULL PRIMARY KEY IDENTITY(1, 1), 
     [Name] NVARCHAR(256) NOT NULL, 
     [Price] DECIMAL(18, 2) NOT NULL, 
-    [MeasurementUnitId] INT NULL FOREIGN KEY REFERENCES MeasurementUnit(MeasurementUnitId)
+    [MeasurementUnitId] INT NULL FOREIGN KEY REFERENCES MeasurementUnits(MeasurementUnitId)
 )

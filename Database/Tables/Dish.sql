@@ -1,5 +1,0 @@
-﻿CREATE TABLE [dbo].[Dish]
-(
-	[DishId] INT NOT NULL PRIMARY KEY IDENTITY (1, 1), 
-    [Name] NVARCHAR(256) NOT NULL
-)
