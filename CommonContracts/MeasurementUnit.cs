@@ -4,7 +4,7 @@ using DalContracts.MeasurementUnits;
 
 namespace CommonContracts
 {
-    internal class MeasurementUnit : BaseContract
+    public class MeasurementUnit : BaseContract
     {
         [DataMember]
         public int? MeasurementUnitId { get; set; }

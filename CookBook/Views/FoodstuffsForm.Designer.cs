@@ -1,6 +1,6 @@
-﻿namespace CookBook
+﻿namespace CookBook.Views
 {
-    partial class Form1
+    partial class FoodstuffsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FoodstuffsForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(591, 354);
+            this.Name = "FoodstuffsForm";
+            this.Text = "Ингредиенты";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-

@@ -7,7 +7,7 @@ using DAL.Repository;
 
 namespace DAL
 {
-    internal class DalService : IDalService
+    public class DalService : IDalService
     {
         private readonly IRepository _repository = new SqlRepository(SqlConnectionHelper.ConnectionString);
 

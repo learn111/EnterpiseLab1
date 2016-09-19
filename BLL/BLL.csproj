@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1DF1DC5E-1A87-410B-AEDC-A4C6020018D9}</ProjectGuid>
+    <ProjectGuid>{408480D9-1119-4450-A180-0F7D40F953C4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DalContracts</RootNamespace>
-    <AssemblyName>DalContracts</AssemblyName>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,20 +40,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DishesToFoodstuffs\DishesToFoodstuffsProcedures.cs" />
-    <Compile Include="DishesToFoodstuffs\DishesToFoodstuffsProceduresProcedureMapper.cs" />
-    <Compile Include="DishType\DishTypeProcedureMapper.cs" />
-    <Compile Include="DishType\DishTypeProcedures.cs" />
-    <Compile Include="Dish\DishProcedureMapper.cs" />
-    <Compile Include="Dish\DishProcedures.cs" />
-    <Compile Include="Foodstuff\FoodstuffProcedureMapper.cs" />
-    <Compile Include="Foodstuff\FoodstuffProcedures.cs" />
-    <Compile Include="IProcedureMapper.cs" />
-    <Compile Include="MeasurementUnits\MeasurementUnitsProcedureMapper.cs" />
-    <Compile Include="MeasurementUnits\MeasurementUnitsProcedures.cs" />
-    <Compile Include="ProcedureMapperBase.cs" />
+    <Compile Include="Contracts\IMeasurementUnitsService.cs" />
+    <Compile Include="Models\BindableModelBase.cs" />
+    <Compile Include="Models\FoodstuffModel.cs" />
+    <Compile Include="Models\MeasurementUnitModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\MeasurementUnitsService.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonContracts\CommonContracts.csproj">
+      <Project>{519FB6B1-08FD-489B-80C4-4B67529F2673}</Project>
+      <Name>CommonContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DalContracts\DalContracts.csproj">
+      <Project>{1DF1DC5E-1A87-410B-AEDC-A4C6020018D9}</Project>
+      <Name>DalContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{31EE9566-C683-447C-BAF6-7C77B5C9169C}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

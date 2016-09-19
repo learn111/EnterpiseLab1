@@ -1,6 +1,6 @@
 ﻿namespace DalContracts.MeasurementUnits
 {
-    internal enum MeasurementUnitsProcedures
+    public enum MeasurementUnitsProcedures
     {
         Add,
         Delete,

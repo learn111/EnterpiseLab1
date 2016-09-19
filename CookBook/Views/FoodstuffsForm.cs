@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CookBook
+namespace CookBook.Views
 {
-    public partial class Form1 : Form
+    public partial class FoodstuffsForm : Form
     {
-        public Form1()
+        public FoodstuffsForm()
         {
             InitializeComponent();
         }

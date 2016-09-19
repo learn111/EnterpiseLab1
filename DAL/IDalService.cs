@@ -4,7 +4,7 @@ using CommonContracts;
 
 namespace DAL
 {
-    internal interface IDalService
+    public interface IDalService
     {
         IEnumerable<T> FormatOp<T>(Enum op, T type) where T : BaseContract, new();
     }

@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,6 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseContract.cs" />
+    <Compile Include="Dish.cs" />
+    <Compile Include="DishesToFoodstuffs.cs" />
+    <Compile Include="DishType.cs" />
+    <Compile Include="Foodstuff.cs" />
+    <Compile Include="MeasurementUnit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

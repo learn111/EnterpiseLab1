@@ -34,7 +34,7 @@ namespace DAL.Miscellaneous
             if (!Xml.HasElements)
                 yield break;
 
-            foreach (var xElement in Xml.Elements().TakeWhile(xElement => xElement.HasAttributes))
+            foreach (var xElement in Xml.Elements().TakeWhile(xElement => xElement.HasElements))
             {
                 yield return GetObject<T>(xElement);
             }
@@ -45,14 +45,14 @@ namespace DAL.Miscellaneous
             var type = typeof (T);
             var obj = new T();
 
-            foreach (var propertyInfo in type.GetProperties(BindingFlags.Public))
+            foreach (var propertyInfo in type.GetProperties())
             {
                 if (!propertyInfo.CanWrite || !propertyInfo.IsDefined(typeof (DataMemberAttribute), false))
                     continue;
 
                 try
                 {
-                    var element = xElement.Attribute(XName.Get(propertyInfo.Name));
+                    var element = xElement.Element(XName.Get(propertyInfo.Name));
                     var rowObj = element?.Value;
                     var value = SafetyConvertion(rowObj, propertyInfo);
                     propertyInfo.SetValue(obj, value);
