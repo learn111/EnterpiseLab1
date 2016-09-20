@@ -8,5 +8,6 @@ namespace Presentation.Views
         event Action MeasurementUnitsClicked;
         event Action DishTypesClicked;
         event Action DishesClicked;
+        event Action DishesConfigClicked;
     }
 }

@@ -17,6 +17,7 @@ namespace Presentation.Presenters
             View.DishTypesClicked += () => ApplicationController.Run<DishTypesPresenter>();
             View.FoodstuffsClicked += () => ApplicationController.Run<FoodstuffsPresenter>();
             View.DishesClicked += () => ApplicationController.Run<DishesPresenter>();
+            View.DishesConfigClicked += () => ApplicationController.Run<DishesToFoodstuffsPresenter>();
         }
 
         public override void Run()

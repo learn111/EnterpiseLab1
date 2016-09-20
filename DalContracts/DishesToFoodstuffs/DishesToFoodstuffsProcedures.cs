@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DalContracts.DishesToFoodstuffs
 {
-    enum DishesToFoodstuffsProcedures
+    public enum DishesToFoodstuffsProcedures
     {
         Add,
         Delete,
