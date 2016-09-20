@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
+using BLL.Models;
 using Presentation.Views;
 
 namespace CookBook.Views
@@ -25,6 +28,13 @@ namespace CookBook.Views
         public event Action DishTypesClicked;
         public event Action DishesClicked;
         public event Action DishesConfigClicked;
+        public event Action GenerateReportClicked;
+
+        public IEnumerable<DishCookModel> Dishes
+        {
+            get { return (IEnumerable<DishCookModel>) bsDishes.DataSource; }
+            set { bsDishes.DataSource = value.ToList(); }
+        }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -53,6 +63,11 @@ namespace CookBook.Views
         private void настройкаБлюдToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DishesConfigClicked?.Invoke();
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            GenerateReportClicked?.Invoke();
         }
     }
 }

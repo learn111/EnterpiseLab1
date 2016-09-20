@@ -30,7 +30,8 @@ namespace CookBook
                 .RegisterService<IFoodstuffService, FoodstuffService>()
                 .RegisterService<IDishTypesService, DishTypesService>()
                 .RegisterService<IDishesService, DishesService>()
-                .RegisterService<IDishesToFoodstuffsService, DishesToFoodstuffsService>();
+                .RegisterService<IDishesToFoodstuffsService, DishesToFoodstuffsService>()
+                .RegisterService<IReportGenerationService, ReportGenerationService>();
         }
     }
 }

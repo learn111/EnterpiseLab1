@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using BLL.Models;
 
 namespace Presentation.Views
 {
@@ -9,5 +11,7 @@ namespace Presentation.Views
         event Action DishTypesClicked;
         event Action DishesClicked;
         event Action DishesConfigClicked;
+        event Action GenerateReportClicked;
+        IEnumerable<DishCookModel> Dishes { get; set; }
     }
 }
