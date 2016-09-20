@@ -70,6 +70,7 @@
     <Compile Include="Models\BindableModelBase.cs" />
     <Compile Include="Models\DishCookModel.cs" />
     <Compile Include="Models\DishModel.cs" />
+    <Compile Include="Models\DishPrintModel.cs" />
     <Compile Include="Models\DishToFoodstuffsModel.cs" />
     <Compile Include="Models\DishTypeModel.cs" />
     <Compile Include="Models\FoodstuffModel.cs" />

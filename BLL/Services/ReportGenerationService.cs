@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -29,13 +28,17 @@ namespace BLL.Services
             {
                 string[] header;
                 string[][] table;
-                ExcelHelper.GetTable(CountFoodstuffs(dishes), out header, out table);
+
+                var dishPrintModels = CountFoods(dishes).ToList();
+                ExcelHelper.GetTable(dishPrintModels, out header, out table);
 
                 var workbook = new XSSFWorkbook();
                 var sheet = workbook.CreateSheet("report");
                 sheet.DrawTable("A1", 1, new[] {header}, BorderStyle.Thin);
                 sheet.DrawTable("A2", 1, table, BorderStyle.Thin);
-
+                var row = sheet.GetRow(dishPrintModels.Count+1) ?? sheet.CreateRow(dishPrintModels.Count+1);
+                row.CreateCell(2).SetCellValue("Всего");
+                row.CreateCell(3).SetCellValue((double) dishPrintModels.Sum(x=>x.PriceTotal));
                 using (var fileData = new FileStream(path, FileMode.Create))
                 {
                     workbook.Write(fileData);
@@ -43,6 +46,22 @@ namespace BLL.Services
 
 
                 Process.Start(path);
+            });
+        }
+
+        private IEnumerable<DishPrintModel> CountFoods(IEnumerable<DishCookModel> dishes)
+        {
+            var foodstuffs = DalService.FormatOp(FoodstuffProcedures.Get, new Foodstuff()).ToList();
+            var units = DalService.FormatOp(MeasurementUnitsProcedures.Get, new MeasurementUnit()).ToList();
+            var foodstuffToDishes =
+                DalService.FormatOp(DishesToFoodstuffsProcedures.Get, new DishesToFoodstuffs()).ToList();
+            return dishes.Select(x => new DishPrintModel
+            {
+                Count = x.Count,
+                Name = x.DishName,
+                PriceSingle =
+                    foodstuffToDishes.Where(y => y.DishId == x.DishId)
+                        .Sum(y => y.Consumption*foodstuffs.First(z => z.FoodstuffId == y.FoodstuffId).Price)
             });
         }
 
