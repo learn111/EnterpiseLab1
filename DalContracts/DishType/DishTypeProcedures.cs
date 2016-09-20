@@ -1,6 +1,6 @@
 ﻿namespace DalContracts.DishType
 {
-    internal enum DishTypeProcedures
+    public enum DishTypeProcedures
     {
         Add,
         Delete,

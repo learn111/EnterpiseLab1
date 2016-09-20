@@ -14,6 +14,7 @@ namespace Presentation.Presenters
         private void Subscribe()
         {
             View.MeasurementUnitsClicked += () => ApplicationController.Run<MeasurementUnitsPresenter>();
+            View.DishTypesClicked += () => ApplicationController.Run<DishTypesPresenter>();
         }
 
         public override void Run()

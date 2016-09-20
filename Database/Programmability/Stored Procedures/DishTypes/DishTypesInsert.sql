@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE DishTypesInsert 
-	@DishTypeId INT,	@Name NVARCHAR(64)
+	@Name NVARCHAR(64)
 AS
 BEGIN
 	DECLARE @ErrorMessage NVARCHAR(4000)
@@ -11,12 +11,12 @@ BEGIN
 		BEGIN TRANSACTION
 
 		INSERT dbo.DishTypes ( 
-			DishTypeId,			Name
+			Name
 		)
 		SELECT 
-			@DishTypeId,			@Name
+			@Name
 
-		
+		DECLARE @DishTypeId INT = SCOPE_IDENTITY()
 		EXEC DishTypesSelect
 			@DishTypeId = @DishTypeId
 

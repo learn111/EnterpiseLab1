@@ -32,6 +32,7 @@
             this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ингридиентыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.единицыИзмеренияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.типыБлюдToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,8 @@
             // 
             this.настройкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ингридиентыToolStripMenuItem,
-            this.единицыИзмеренияToolStripMenuItem});
+            this.единицыИзмеренияToolStripMenuItem,
+            this.типыБлюдToolStripMenuItem});
             this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
             this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.настройкиToolStripMenuItem.Text = "Настройки";
@@ -67,6 +69,13 @@
             this.единицыИзмеренияToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.единицыИзмеренияToolStripMenuItem.Text = "Единицы измерения";
             this.единицыИзмеренияToolStripMenuItem.Click += new System.EventHandler(this.единицыИзмеренияToolStripMenuItem_Click);
+            // 
+            // типыБлюдToolStripMenuItem
+            // 
+            this.типыБлюдToolStripMenuItem.Name = "типыБлюдToolStripMenuItem";
+            this.типыБлюдToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.типыБлюдToolStripMenuItem.Text = "Типы блюд";
+            this.типыБлюдToolStripMenuItem.Click += new System.EventHandler(this.типыБлюдToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -91,5 +100,6 @@
         private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ингридиентыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem единицыИзмеренияToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem типыБлюдToolStripMenuItem;
     }
 }

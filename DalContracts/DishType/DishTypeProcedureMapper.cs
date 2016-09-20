@@ -12,7 +12,7 @@ namespace DalContracts.DishType
         private void FillMap()
         {
             Map.Add(DishTypeProcedures.Add,
-                new KeyValuePair<string, List<string>>("DishTypesInsert", new List<string> {"DishTypeId", "Name"}));
+                new KeyValuePair<string, List<string>>("DishTypesInsert", new List<string> {"Name"}));
             Map.Add(DishTypeProcedures.Delete,
                 new KeyValuePair<string, List<string>>("DishTypesDelete", new List<string> {"DishTypeId"}));
             Map.Add(DishTypeProcedures.Update,

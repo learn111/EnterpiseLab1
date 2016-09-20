@@ -6,5 +6,6 @@ namespace Presentation.Views
     {
         event Action FoodstuffsClicked;
         event Action MeasurementUnitsClicked;
+        event Action DishTypesClicked;
     }
 }

@@ -21,8 +21,10 @@ namespace CookBook
                 .RegisterInstance(new ApplicationContext())
                 .RegisterView<IMainView, MainForm>()
                 .RegisterView<IMeasurementUnitsView, MeasurementUnitsForm>()
+                .RegisterView<IDishTypesView, DishTypesForm>()
                 .RegisterService<IDalService, DalService>()
-                .RegisterService<IMeasurementUnitsService, MeasurementUnitsService>();
+                .RegisterService<IMeasurementUnitsService, MeasurementUnitsService>()
+                .RegisterService<IDishTypesService, DishTypesService>();
         }
     }
 }

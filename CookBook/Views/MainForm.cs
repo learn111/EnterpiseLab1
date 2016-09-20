@@ -22,6 +22,7 @@ namespace CookBook.Views
 
         public event Action FoodstuffsClicked;
         public event Action MeasurementUnitsClicked;
+        public event Action DishTypesClicked;
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -35,6 +36,11 @@ namespace CookBook.Views
         private void единицыИзмеренияToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MeasurementUnitsClicked?.Invoke();
+        }
+
+        private void типыБлюдToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DishTypesClicked?.Invoke();
         }
     }
 }
