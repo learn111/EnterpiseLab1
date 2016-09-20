@@ -33,6 +33,7 @@
             this.ингридиентыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.единицыИзмеренияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.типыБлюдToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.блюдаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,8 @@
             this.настройкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ингридиентыToolStripMenuItem,
             this.единицыИзмеренияToolStripMenuItem,
-            this.типыБлюдToolStripMenuItem});
+            this.типыБлюдToolStripMenuItem,
+            this.блюдаToolStripMenuItem});
             this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
             this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.настройкиToolStripMenuItem.Text = "Настройки";
@@ -77,6 +79,13 @@
             this.типыБлюдToolStripMenuItem.Text = "Типы блюд";
             this.типыБлюдToolStripMenuItem.Click += new System.EventHandler(this.типыБлюдToolStripMenuItem_Click);
             // 
+            // блюдаToolStripMenuItem
+            // 
+            this.блюдаToolStripMenuItem.Name = "блюдаToolStripMenuItem";
+            this.блюдаToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.блюдаToolStripMenuItem.Text = "Блюда";
+            this.блюдаToolStripMenuItem.Click += new System.EventHandler(this.блюдаToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,5 +110,6 @@
         private System.Windows.Forms.ToolStripMenuItem ингридиентыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem единицыИзмеренияToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem типыБлюдToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem блюдаToolStripMenuItem;
     }
 }

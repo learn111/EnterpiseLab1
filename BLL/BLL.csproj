@@ -41,14 +41,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\ICrudService.cs" />
+    <Compile Include="Contracts\IDishesService.cs" />
     <Compile Include="Contracts\IDishTypesService.cs" />
     <Compile Include="Contracts\IFoodstuffService.cs" />
     <Compile Include="Contracts\IMeasurementUnitsService.cs" />
     <Compile Include="Models\BindableModelBase.cs" />
+    <Compile Include="Models\DishModel.cs" />
     <Compile Include="Models\DishTypeModel.cs" />
     <Compile Include="Models\FoodstuffModel.cs" />
     <Compile Include="Models\MeasurementUnitModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DishesService.cs" />
     <Compile Include="Services\DishTypesService.cs" />
     <Compile Include="Services\FoodstuffService.cs" />
     <Compile Include="Services\MeasurementUnitsService.cs" />

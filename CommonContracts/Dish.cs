@@ -5,7 +5,7 @@ using DalContracts.Dish;
 
 namespace CommonContracts
 {
-    internal class Dish : BaseContract
+    public class Dish : BaseContract
     {
         [DataMember]
         public int? DishId { get; set; }

@@ -16,6 +16,7 @@ namespace Presentation.Presenters
             View.MeasurementUnitsClicked += () => ApplicationController.Run<MeasurementUnitsPresenter>();
             View.DishTypesClicked += () => ApplicationController.Run<DishTypesPresenter>();
             View.FoodstuffsClicked += () => ApplicationController.Run<FoodstuffsPresenter>();
+            View.DishesClicked += () => ApplicationController.Run<DishesPresenter>();
         }
 
         public override void Run()
