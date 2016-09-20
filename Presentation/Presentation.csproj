@@ -45,12 +45,14 @@
     <Compile Include="Common\IApplicationController.cs" />
     <Compile Include="Common\IContainer.cs" />
     <Compile Include="Presenters\DishTypesPresenter.cs" />
+    <Compile Include="Presenters\FoodstuffsPresenter.cs" />
     <Compile Include="Presenters\IPresenter.cs" />
     <Compile Include="Presenters\MainPresenter.cs" />
     <Compile Include="Presenters\MeasurementUnitsPresenter.cs" />
     <Compile Include="Presenters\PresenterBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\IDishTypesView.cs" />
+    <Compile Include="Views\IFoodstuffView.cs" />
     <Compile Include="Views\IMainView.cs" />
     <Compile Include="Views\IMeasurementUnitsView.cs" />
     <Compile Include="Views\IView.cs" />

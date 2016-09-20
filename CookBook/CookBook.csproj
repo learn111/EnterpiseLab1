@@ -115,7 +115,9 @@
       <DependentUpon>MeasurementUnitsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BLL.Models.FoodstuffModel.datasource" />
     <None Include="Properties\DataSources\BLL.Models.MeasurementUnitModel.datasource" />
+    <None Include="Properties\DataSources\Common.KeyValueStringInt.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

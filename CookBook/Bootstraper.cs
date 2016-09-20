@@ -22,8 +22,10 @@ namespace CookBook
                 .RegisterView<IMainView, MainForm>()
                 .RegisterView<IMeasurementUnitsView, MeasurementUnitsForm>()
                 .RegisterView<IDishTypesView, DishTypesForm>()
+                .RegisterView<IFoodstuffView, FoodstuffsForm>()
                 .RegisterService<IDalService, DalService>()
                 .RegisterService<IMeasurementUnitsService, MeasurementUnitsService>()
+                .RegisterService<IFoodstuffService, FoodstuffService>()
                 .RegisterService<IDishTypesService, DishTypesService>();
         }
     }
